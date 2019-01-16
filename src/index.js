@@ -152,7 +152,7 @@ function spriteSmash(options) {
           .join(renamed.newName);
       });
 
-      file.contents = new Buffer(contents);
+      file.contents = Buffer.from(contents);
       that.push(file);
     }, this);
 
